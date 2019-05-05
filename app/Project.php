@@ -36,3 +36,29 @@ class Project extends Model
 // Singular Model for database item - Eloquent provides the model to put single items into the sql tables which are created by the migration fies
 // migrate - creates the tables and empty structure in mysql and 
 // eloquent models give form for singular items
+
+// can use policies to set authorisation functions - episide 27
+// many different ways to use teh auth middles wares and 
+// add levels of authorisation to different pages
+// /Gate:: middleware('can:update...') - lots of documentation 
+// 
+
+// php artisan make:event projectPublished -- past event thing that took plae
+// created under app/events
+// the event is a class - creates an object against that class
+// events(new PrjectCreated($project)); broadcasts aroudn app that a new project was cerated an passes the proejct as a variable int o it. 
+// can also make a listener with php artisan make:listener SendProjectCreatedNotificationToUser
+// listeners directory also created in the app. 
+// handles(ProjectCreated) event - there is a way to boiler plate that in
+// php artisan help make:listener - lists useful extra commands for command line
+
+
+// event creates a container in the system. 
+// 
+
+// can use a service provider to fire off differnet event listeners when that event takes palce
+//
+
+
+// can also make:notification nameOfClass through artisan 
+// 

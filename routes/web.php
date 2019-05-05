@@ -57,3 +57,5 @@ Route::patch('/tasks/{task}', 'ProjectTasksController@update');
 Route::post('/projects/{project}/tasks', 'ProjectTasksController@store');
 
 // can apply middlesware here or incontroller
+
+Route::get('/vue', 'PagesController@vue');

@@ -7,22 +7,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>@yield('title', "MFP!")</title>
   <style>
-    .isComplete {
-      text-decoration: line-through;
-    }
+  .isComplete {
+    text-decoration: line-through;
+  }
   </style>
 </head>
 
 <body>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">about</a></li>
-    <li><a href="/contact">contact</a></li>
-    <li><a href="/projects">projects</a></li>
-  </ul>
+  <div id="app">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">about</a></li>
+      <li><a href="/contact">contact</a></li>
+      <li><a href="/projects">projects</a></li>
+      <li><a href="/vue">Vue</a></li>
+    </ul>
 
-  @yield('content')
-
+    @yield('content')
+  </div>
 </body>
 
 </html>
